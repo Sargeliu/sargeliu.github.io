@@ -1,6 +1,7 @@
 .advantages
 	min-height: 472px
 	padding: 70px 0 80px 0
+	background-color: #f6f6f6
 	&__wrapper
 		margin-top: 65px
 		display: flex
@@ -26,3 +27,13 @@
 		a
 			color: #ff0000
 			text-decoration: underline
+	&__icon
+		&_animated
+			animation: heartbeat 2s ease infinite
+			// animation-name: heartbeat
+			// animation-duration: 2s
+			// animation-timing-function: ease
+			// animation-iteration-count: infinite
+			&:hover
+				animation-play-state: paused
+
