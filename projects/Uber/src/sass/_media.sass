@@ -1,0 +1,240 @@
+@media ( max-width: 1200px )
+	.menu
+		&_item
+			padding-right: 20px
+		&_link
+			font-size: 13px
+	.promo
+		&_header
+			font-size: 50px
+		&_subheader
+			font-size: 30px
+	.reasons
+		&_block
+			align-items: flex-start
+		&_descr
+			width: 300px
+	.mobile
+		&_item
+			width:  300px
+			&_subtitle
+				font-size: 17px
+	.footer
+		&_wrapper > div
+			width: 40% // выравниваем .footer_links по центру
+		&_social
+			display: none
+		&_mobile
+			display: none
+
+@media ( max-width: 991px ) // не 992px
+	.menu
+		&_item
+			padding-right: 8px
+		&_link
+			font-size: 10px
+	.subheader
+		&_logo
+			img
+				width: 100%
+		&_official
+			font-size: 11px
+		&_phone
+			font-size: 18px
+		&_btn
+			margin-top: 21px
+			height: 40px
+			width: 100%
+	.promo
+		&_header
+			font-size: 40px
+		&_subheader
+			font-size: 23px
+		&_descr
+			font-style: 15px
+	.mobile
+		&_item
+			width:  230px
+	.choice
+		&_car
+			width: 700px
+	.reasons
+		&_block
+			flex-direction: column
+			align-items: center
+		&_descr
+			margin-top: 20px
+	.footer
+		&_wrapper > div
+			width: 52% // выравниваем .footer_links по центру
+
+@media ( max-width: 767px )
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		right: -100% // прячем меню
+		width: 40%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.6s all
+		&_active
+			right: 0
+		&_item
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&_link
+			font-size: 15px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px // по 2px высота каждой палочки и по 2px каждый margin-bottom
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px // чтоб крестик получился ровный
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg) //  смещение палочек на 3px и поворот на -45 градусов
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs_hidden
+		display: none
+	.xs_visible
+		display: block
+	.subheader
+		&_phone
+			display: block
+			margin-top: 5px
+			color: #ffffff
+			font-size: 17px
+			font-weight: 400
+			text-transform: uppercase
+			text-align: center
+		&_btn
+			display: block
+			width: 200px
+			height: 40px
+			margin: 0 auto
+			margin-top: 5px
+	.promo
+		&_header
+			line-height: 45px
+	.reasons
+		&_subtitle
+			text-align: center
+	.choice
+		&_car
+			width: 500px
+	.footer
+		&_wrapper > div
+			width: 74% // выравниваем .footer_links по центру
+
+@media ( max-width: 575px )
+	.subheader
+		height: 60px
+		&_official
+			display: none
+		&_logo
+			margin-top: 16px
+		&_phone
+			font-weight: 400
+			text-align: center
+			text-transform: uppercase
+			font-size: 12px
+			margin-top: 4px
+		&_btn
+			width: 110px
+			height: 22px
+			font-size: 10px
+			margin-top: 4px
+			&:hover
+				background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+	.promo
+		min-height: 400px
+		padding: 128px 0 35px 0
+		&_descr
+			display: none
+		&_header
+			font-size: 30px
+		&_subheader
+			font-size: 20px
+		&_btn
+			&:hover
+				background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+	.menu
+		width: 70%
+		&_item
+			width: 100%
+			text-align: center
+		&_link
+			display: block
+	.reasons
+		padding: 22px 0 36px 0
+
+	.title
+		font-size: 16px
+		margin-top: 15px
+		line-height: 16px
+	.mobile
+		&_item
+			&_subtitle
+				font-size: 14px				
+	.choice
+		padding: 25px 0 33px 0
+		min-height: 390px 
+		background: none
+		background-color: #070716 
+		&_car
+			width: 280px
+		&_descr
+			color: #fff
+			font-size: 12px
+		.black
+			display: none
+		.title, .subtitle
+			display: none
+	.require
+		&_list
+			margin-left: 0
+	.world
+		min-height: 360px
+		.title
+			margin-top: 25px
+			font-size: 18px
+	.footer
+		&_wrapper > div
+			width: 100% // выравниваем .footer_links по центру
+		&_divider
+			width: 253px
+		&_links
+			width: 280px
+			&_main
+				a
+					font-size: 11px
+			&_sub
+				a
+					font-size: 7px
+			&_lang
+				font-size: 11px
+
+
+	
+					
+
+		
